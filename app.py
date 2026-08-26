@@ -9,10 +9,9 @@ st.markdown("---")
 uploaded_file = st.file_uploader("Upload your ECG", type=["jpg", "png", "jpeg"])
 
 if uploaded_file:
-    # 50KB size check
-    if uploaded_file.size > 50 * 1024:
-        st.error("File too large! Please upload less than 50KB")
-        st.stop()
+    if uploaded_file:
+
+    st.image(uploaded_file, caption="
 
     st.image(uploaded_file, caption="Uploaded ECG")
     st.success("ECG Uploaded Successfully")
