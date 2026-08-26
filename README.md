@@ -9,9 +9,13 @@ In small clinics, ECG machines give noisy signals due to power issues, patient m
 - LinkedIn got restricted (learning!)
 
 ### Day 2 - Today
-- Learning: What is noisy ECG?
-- Next: List 5 types of noise
-
+Learning: What is noisy ECG? 5 types:
+     - Powerline (50Hz light se)
+     - Muscle artifacts (hilne se)
+     - Baseline wander (saans se)
+     - Electrode contact (gel sukhne se)
+     - Motion artifacts (rural clinics me)
+   - Next: How AI can clean it
 ### About Me
 Dr. Navya | MBBS | Delhi
 Doctor to Coder Journey - Day 2
