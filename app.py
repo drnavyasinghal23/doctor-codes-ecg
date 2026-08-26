@@ -3,7 +3,7 @@ import streamlit as st
 st.set_page_config(page_title="AI ECG Reader")
 
 st.title("Dr. Navya's AI ECG Reader")
-st.write("Built by an MBBS Doctor turned Developer")
+st.write("AI-Powered ECG Analysis for Quick & Accurate Cardiac Insights")
 
 st.markdown("---")
 
