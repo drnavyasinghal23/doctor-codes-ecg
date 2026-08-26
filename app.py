@@ -1,21 +1,18 @@
 import streamlit as st
 
-st.set_page_config(page_title="AI ECG")
+st.set_page_config(page_title="AI ECG Reader")
 
 st.title("Dr. Navya's AI ECG Reader")
-st.write("Built by an MBBS Doctor turning ECGs into insights")
+st.write("Built by an MBBS Doctor turned Developer")
 
 st.markdown("---")
-uploaded_file = st.file_uploader("Upload your ECG", type=["jpg", "png", "jpeg"])
+
+uploaded_file = st.file_uploader("Upload your ECG image", type=["jpg", "png", "jpeg"])
 
 if uploaded_file:
-    if uploaded_file:
-
-    st.image(uploaded_file, caption="
-
     st.image(uploaded_file, caption="Uploaded ECG")
     st.success("ECG Uploaded Successfully")
-    st.caption(f"File size: {uploaded_file.size/1024:.1f} KB - OK")
+    st.caption(f"File size: {uploaded_file.size / 1024:.2f} KB")
 
     col1, col2 = st.columns(2)
     with col1:
@@ -25,5 +22,5 @@ if uploaded_file:
 
     st.info("Analysis: Heart rate is normal")
 else:
-    st.write("Please upload an ECG image to start")
-    st.caption("Supports JPG, PNG - Max 50KB per file")
+    st.write("Please upload an ECG image")
+    st.caption("Supports JPG, PNG - Any size from 0KB to unlimited")
